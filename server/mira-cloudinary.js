@@ -1,5 +1,5 @@
 
-var cloudinary = Meteor.npmRequire('cloudinary');
+var cloudinary = Npm.require('cloudinary');
 
 Cloudinary = {
   config: function(config) {
@@ -7,8 +7,8 @@ Cloudinary = {
   }
 };
 
-var Fiber = Meteor.npmRequire('fibers');
-var Future = Meteor.npmRequire('fibers/future');
+var Fiber = Npm.require('fibers');
+var Future = Npm.require('fibers/future');
 
 
 Meteor.methods({

@@ -1,8 +1,8 @@
 Package.describe({
   name: 'leesangwon:mira-cloudinary',
   summary: 'Image upload to the Cloudinary',
-  version: '0.1.0',
-  git: 'https://github.com/miraten/cloudinary'
+  version: '0.3.0',
+  git: 'https://github.com/miraten/mira-cloudinary'
 });
 
 Npm.depends({
@@ -13,12 +13,19 @@ Package.onUse(function(api) {
   api.versionsFrom('METEOR@0.9.4');
 
   api.use([
-    'meteorhacks:npm',
+    'meteorhacks:npm@1.2.0',
     'service-configuration',
     'blaze',
     'spacebars',
     'templating'
   ], 'server');
+
+  api.addFiles([
+    'client/0.jquery.ui.widget.js',
+    'client/1.jquery.iframe-transport.js',
+    'client/2.jquery.fileupload.js',
+    'client/3.jquery.cloudinary.js'
+  ], 'client');
 
   api.addFiles(['client/uploader.js'], 'client');
   api.addFiles(['server/mira-cloudinary.js'], 'server');
