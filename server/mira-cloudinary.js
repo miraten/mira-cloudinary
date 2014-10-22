@@ -4,6 +4,10 @@ var cloudinary = Npm.require('cloudinary');
 Cloudinary = {
   config: function(config) {
     cloudinary.config(config);
+  },
+  
+  remove: function(public_id, callback) {
+    cloudinary.uploader.destroy(file, callback);
   }
 };
 
