@@ -7,7 +7,7 @@ Cloudinary = {
   },
   
   remove: function(public_id, callback) {
-    cloudinary.uploader.destroy(file, callback);
+    cloudinary.uploader.destroy(public_id, callback);
   }
 };
 

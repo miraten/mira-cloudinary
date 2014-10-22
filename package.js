@@ -1,7 +1,7 @@
 Package.describe({
   name: 'leesangwon:mira-cloudinary',
   summary: 'Image upload to the Cloudinary',
-  version: '0.4.2',
+  version: '0.4.3',
   git: 'https://github.com/miraten/mira-cloudinary'
 });
 
